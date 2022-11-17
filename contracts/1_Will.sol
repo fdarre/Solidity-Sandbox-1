@@ -9,7 +9,7 @@ contract Will
     bool isDeceased;
 
     //payable: allow this function to send and receive ether
-    constructor() payable
+    constructor() public payable 
     {
         owner = msg.sender; //msg sender represents address that is being called
         fortune = msg.value; //msg value telle=s us how much ether is being sent

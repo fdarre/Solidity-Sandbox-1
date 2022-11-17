@@ -42,7 +42,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/4_Will.sol": "Will"
+			"contracts/1_Will.sol": "Will"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -56,12 +56,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/4_Will.sol": {
-			"keccak256": "0xb684c92dccec20f1592f8739911548f0b963a1bda96f5d6bc47564000fc65dec",
+		"contracts/1_Will.sol": {
+			"keccak256": "0x6de3bc80229efbd4f173c2eb45a77e98192b8794f34ac19e4b41878585bd6a55",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://253c46348ba8529e89a80498e8e953c54407b74c9b075cb7d32f0131257c24b9",
-				"dweb:/ipfs/QmW6qoHb7t3mZM1PTGAntoARf4KjBPr6V7UA5hYdbofNoC"
+				"bzz-raw://d56766e824f3f33c1c6652e1ffb81e0a45f9ca92d921e7d54f5bed9618fb20c6",
+				"dweb:/ipfs/QmP8PxmybDtdZXExHK1gDgMAj9DTqpH2U8fajjoEfzpmk7"
 			]
 		}
 	},
