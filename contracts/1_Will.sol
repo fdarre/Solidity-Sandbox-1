@@ -38,8 +38,19 @@ contract Will
     //set inheritance for each address
     function setInheritance(address payable wallet, uint amount) public
     {
-        
         familyWallets.push(wallet); //add wallets to the family wallets
         inheritance[wallet] = amount; //add the inheritance amount for the wallet
+    }
+
+
+    //pay each family member based on their wallet address
+    function payout() private mustBeDeceased {
+
+        for(i=0; i < familyWallets.length; i++)
+        {
+            //transfer the fund from the contract address to the receiver address in the list
+            familyWallets[i].transfer(inheritance[familyWallets[i]]);                   
+        }
+
     }
 }
