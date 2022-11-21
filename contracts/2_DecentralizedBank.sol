@@ -1,26 +1,41 @@
 /* 
 Smart contract that can add investor wallets to a decentralized bank and then allocate (pay) them funds. 
-Can select different accounts from our test accounts and use the payInvestors functions to send funds. 
-The checkInvestors function should return to you how many investors wallets have been added to the bank
-
 */
 
 pragma solidity >= 0.7.0 < 0.9.0;
 
-contract AddressWallets
-{
-    address payable[] investorWallets ;
+contract AddressWallets {
 
-    mapping (address => uint) investors;
+    uint payableValue;
+    address payable[] investorWallets; 
 
+    constructor() payable
+    {
+        payableValue = msg.value;
+    }
+    
+    mapping(address => uint) investors;
+    
+    function addInvestors(address payable wallet, uint amount) public 
+    {
+        investorWallets.push(wallet);
+        investors[wallet] = amount;
+    }
+    
     function checkInvestors() public view returns (uint) 
     {
         return investorWallets.length;
     }
 
-    function payInvestors(address payable investorAddress, uint amount) public
+    function payout() private
     {
-        investorWallets.push(investorAddress);
-        investors[investorAddress] = amount;
+        for (uint i = 0; i < investorWallets.length; i++)
+        {
+            investorWallets[i].transfer(investors[investorWallets[i]]);
+        }
     }
-}   
+
+    function makePayment() public {
+         payout();
+    }
+}

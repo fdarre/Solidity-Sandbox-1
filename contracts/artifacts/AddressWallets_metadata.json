@@ -7,6 +7,29 @@
 		"abi": [
 			{
 				"inputs": [],
+				"stateMutability": "payable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address payable",
+						"name": "wallet",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "addInvestors",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "checkInvestors",
 				"outputs": [
 					{
@@ -19,19 +42,8 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "address payable",
-						"name": "investorAddress",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "amount",
-						"type": "uint256"
-					}
-				],
-				"name": "payInvestors",
+				"inputs": [],
+				"name": "makePayment",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -65,10 +77,10 @@
 	},
 	"sources": {
 		"contracts/2_DecentralizedBank.sol": {
-			"keccak256": "0x04a542444a549986d145230de1799f11a707182ac6e1e80ea81adee2efe9665d",
+			"keccak256": "0x5e9d0977108d90d39a99e80af2e19fc941566b2d3716e2ddb0dafeb904fe00b8",
 			"urls": [
-				"bzz-raw://f0110ce3fc533847bf1b01878b7f34e5cb70f58b60d78358cbeb7980c4768d38",
-				"dweb:/ipfs/QmWe5uJjXaJY4LJTwmMoawuSJHasNvZbLLC31kAoTJCE87"
+				"bzz-raw://c136c31f04c6515d6badc01d2e5eab196f040ea2c8f116b228e7e324d01d2f35",
+				"dweb:/ipfs/QmUswEcv1GpBUy114PQZ4RiCoxGPm1MGHxQAZ8NQsucEfL"
 			]
 		}
 	},

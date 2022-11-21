@@ -64,11 +64,11 @@
 	},
 	"sources": {
 		"contracts/1_Will.sol": {
-			"keccak256": "0xce0adf4d6e7a062935d754a13bbaac685ab028346ecca361327f9d83c69fc9a3",
+			"keccak256": "0xc1fc4d1c974131bbc6aa09ba8840f9b3fc3328d67fd23c4cb6e306c280294e70",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://0ab7ab56dca66cb4b403176d8bad4f795d31af9b57e7701f019f6214eefb64f1",
-				"dweb:/ipfs/QmWoK6BEh5k1geYKM3XvD8uXQ4LeuDevUgZjpGmaGj878j"
+				"bzz-raw://dd34081b3dc672a229d7c4b832028ec8b0a76a22a234b7ca746014deeeea5ea4",
+				"dweb:/ipfs/QmcpJdH497cpr88dZ2jh8rMaybaqp7visBqpDd6oV6A2x5"
 			]
 		}
 	},

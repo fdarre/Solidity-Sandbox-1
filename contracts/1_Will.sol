@@ -33,7 +33,8 @@ contract Will
     }
 
     //Oracle switch simulation
-    function hasDeceased() public onlyOwner {
+    function hasDeceased() public onlyOwner 
+    {
         isDeceased = true;
         payout();
     }
@@ -49,5 +50,7 @@ contract Will
         require(msg.sender == owner);
         _;
     }
+
+    //000000000000000000
 
 }
