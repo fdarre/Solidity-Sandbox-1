@@ -1,7 +1,5 @@
 // SPDX-License-Identifier: GPL-3.0
 
-//Qd deploy and run : the value of a transaction is the amount of ether the owner will allocate to a smart contract (ex ici some à léguer)
-
 pragma solidity >=0.7.0 <0.9.0;
 
 contract Will 
