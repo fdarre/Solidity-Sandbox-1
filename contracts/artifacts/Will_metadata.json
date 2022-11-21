@@ -14,16 +14,23 @@
 				"inputs": [
 					{
 						"internalType": "address payable",
-						"name": "wallet",
+						"name": "heirWallet",
 						"type": "address"
 					},
 					{
 						"internalType": "uint256",
-						"name": "amount",
+						"name": "inheritanceAmount",
 						"type": "uint256"
 					}
 				],
-				"name": "setInheritance",
+				"name": "addHeir",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "hasDeceased",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -57,11 +64,11 @@
 	},
 	"sources": {
 		"contracts/1_Will.sol": {
-			"keccak256": "0x828e4a16be904020bad3d826537bf93cd70d0f6dd1c29bde0005240d9d579bf5",
+			"keccak256": "0x9d5e824587ef3d083c950e8dc3808151ecc702c90dfcb7227ad1d82a24e45c09",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://a22b069c73c3cb0c19db72359190894954e7232a77335a21221572f51597a1ac",
-				"dweb:/ipfs/QmPcoKWD6h4Ln5pViQnQu4XURFiEeqZKj7hSMJ6uP88SWi"
+				"bzz-raw://a862e4c8c2b7e8a057cb8607fa8fe65981cb0ee0421ec90102e0f1f5a86ee60b",
+				"dweb:/ipfs/QmYfNxqfr3hRxnXgSaXqRa6DCksqmbdCt8hpb9VdprSCa9"
 			]
 		}
 	},
